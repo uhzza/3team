@@ -30,7 +30,16 @@
 }
 #section {
     margin-left: 40px;
+    display: flex;
 }
+#section_center {
+    width: 200px;
+}
+#section a {
+    color : #333;
+    text-decoration: none;
+}
+
 #section ul {
     margin-bottom: 20px;
 }
