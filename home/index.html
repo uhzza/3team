@@ -6,8 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="index.css" />
+    <script>
+      $(document).ready(function(){
+      $('#iconTextCopy').on('click',function(){
+        let copyText = document.querySelector('#iconDns')
+        copyText.select();
+        navigator.clipboard.writeText(copyText.value);
+        alert('복사완료!!');
+      }) 
+      $('#jQueryTextCopy').on('click',function(){
+        let copyText = document.querySelector('#jQueryDns')
+        copyText.select();
+        navigator.clipboard.writeText(copyText.value);
+        alert('복사완료!!');
+      }) 
+    });
+  </script>
     <title>전3조 홈페이지</title>
-    
   </head>
   <body>
     <header id="header">
@@ -18,7 +33,7 @@
       <a href="#"><button>강수민</button></a>
       <a href="#"><button>이다연</button></a>
       <a href="#"><button>이율</button></a>
-      <a href="https://uhzza.github.io/3team/jonghoon/001"><button>이종훈</button></a>
+      <a href="https://uhzza.github.io/3team/jonghoon/jh_home"><button>이종훈</button></a>
       <a href="#"><button>정혜현</button></a>
     </nav>
     <section id="section">
@@ -43,21 +58,19 @@
           <button id="jQueryTextCopy">복사하기</button>
         </li>
       </ul>
+      <ul>
+        <dl>
+          각종 페이지
+        </dl>
+        <li>
+          한글 입숨 : <a href="https://hangul.thefron.me/">https://hangul.thefron.me/</a>
+        </li>
+        <li>
+          구글 폰트 : <a href="https://fonts.google.com/?subset=korean">https://fonts.google.com/?subset=korean</a>
+        </li>
+      </ul>
     </section>
-    <script>
-      $('#iconTextCopy').on('click',function(){
-        let copyText = document.querySelector('#iconDns')
-        copyText.select();
-        navigator.clipboard.writeText(copyText.value);
-        alert('복사완료!!');
-      }) 
-      $('#jQueryTextCopy').on('click',function(){
-        let copyText = document.querySelector('#jQueryDns')
-        copyText.select();
-        navigator.clipboard.writeText(copyText.value);
-        alert('복사완료!!');
-      }) 
-  </script>
+    
     <footer>
     </footer>
   </body>
