@@ -1,6 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 #header {
     text-align: center;
     font-size: xx-large;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 #nav {
     display: flex;
@@ -8,6 +15,7 @@
     align-items: center;
     background-color: #767676;
     height: 100px;
+    margin-bottom: 20px;
 }
 #nav button {
     border: 1px none #222222;
@@ -19,4 +27,22 @@
 #nav button:hover {
     cursor: pointer;
     font-weight: bold;
+}
+#section {
+    margin-left: 40px;
+}
+#section ul {
+    margin-bottom: 20px;
+}
+#section ul dl {
+    font-weight: bold;
+}
+#section ul dl,#section ul li {
+    margin-bottom: 15px;
+}
+#iconDns {
+    width: 700px;
+}
+#jQueryDns{
+    width: 700px;
 }
